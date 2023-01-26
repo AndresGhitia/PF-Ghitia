@@ -1,0 +1,42 @@
+.btn-gral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: $colorBlack;
+    color: $colorWhite;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: $fontXSmall;
+    letter-spacing: 5px;
+    &:hover{
+        background-color: $colorlGold ;
+        color: $colorBlack;
+        transition: 0.4s;
+    }
+}
+
+.btn-ver{
+    @extend.btn-gral;
+    padding: 20px;
+}
+
+.btn-nws{
+    @extend.btn-gral;
+    padding: 10px;
+}
+
+
+.btn-ctc{
+    @extend.btn-gral;
+    margin-top: 20px;
+    padding: 10px;
+    height: 36px;
+}
+
+@media (max-width:375px){
+    .btn-ctc{
+        width: auto;
+    }
+}

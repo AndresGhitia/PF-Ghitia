@@ -1,0 +1,136 @@
+//general
+*{
+    font-family: $mainFont;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: $fontSmall;
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+    font-size: $fontLarge;
+    margin: 20px 0;
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: $fontBig;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+
+h3{
+    font-size: $fontMedium;
+    margin: 20px 0px;
+}
+
+h4{
+    font-size: $fontLarge;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+
+}
+
+//cards
+
+.card{
+    margin: auto;
+    margin-bottom: 40px;
+    width: 250px;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 
+    0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0,0,0,0.22);
+    transition: .4s;
+    background: $colorGrey;
+    &:hover{
+        box-shadow: 
+        0 3px 6px rgba(0,0,0,0.16),
+        0 3px 6px rgba(0,0,0,0.23);
+        transform: translate(0px, -8px);
+    }    
+}
+//textos
+
+@mixin ancho($ancho) {
+    margin: auto;
+    width: $ancho;
+}
+
+.box-ctc{
+    @include ancho(45%);
+}
+
+.box-gta{
+    @include ancho(70%);
+}
+
+.box-ftr{
+    @include ancho(70%);
+    text-align: center;
+}
+
+@mixin fondo($fondo){
+    letter-spacing: 2px;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: $fondo;
+}
+
+.box-frm{
+    @include fondo($colorGrey);
+}
+
+.box-nws{
+    @include fondo($colorCoral);
+    text-align: center;
+}
+
+//imagenes
+.img-lgo{
+    height: 70px;
+    margin-left: 30px;
+}
+
+.img-pdls{
+    width: 200px;
+}
+
+.img-gta{
+    width: 125px;
+}
+
+.img-404{
+    width: 350px;
+}
+
+@media (max-width:425px){
+    .img-lgo{
+        height: 30px;
+    }
+}

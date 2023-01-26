@@ -1,0 +1,223 @@
+* {
+  font-family: sans-serif;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 20px 0;
+  letter-spacing: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 10rem;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin: 20px 0px;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+}
+
+.card {
+  margin: auto;
+  margin-bottom: 40px;
+  width: 250px;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.4s;
+  background: rgb(242, 242, 242);
+}
+.card:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translate(0px, -8px);
+}
+
+.box-ctc {
+  margin: auto;
+  width: 45%;
+}
+
+.box-gta {
+  margin: auto;
+  width: 70%;
+}
+
+.box-ftr {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+.box-frm {
+  letter-spacing: 2px;
+  padding-left: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgb(242, 242, 242);
+}
+
+.box-nws {
+  letter-spacing: 2px;
+  padding-left: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgb(245, 222, 179);
+  text-align: center;
+}
+
+.img-lgo {
+  height: 70px;
+  margin-left: 30px;
+}
+
+.img-pdls {
+  width: 200px;
+}
+
+.img-gta {
+  width: 125px;
+}
+
+.img-404 {
+  width: 350px;
+}
+
+@media (max-width: 425px) {
+  .img-lgo {
+    height: 30px;
+  }
+}
+nav {
+  background: rgb(242, 242, 242);
+}
+nav ul {
+  font-size: 1.5rem;
+  margin-right: 30px;
+}
+nav ul li a:hover {
+  font-weight: 600;
+}
+
+section p {
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(242, 242, 242);
+  margin-top: 20px;
+}
+footer ul {
+  text-decoration: none;
+}
+footer ul li {
+  padding: 10px 0;
+  font-size: 1.5rem;
+}
+footer ul li a {
+  text-decoration: none;
+  color: rgb(34, 47, 62);
+}
+
+.box-ctc p {
+  text-align: left;
+}
+
+.box-gta p {
+  text-align: left;
+}
+
+form {
+  font-size: 1.25rem;
+  width: 45%;
+  align-items: center;
+  margin: auto;
+}
+form input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.error {
+  text-align: center;
+  background-color: rgb(242, 242, 242);
+}
+
+.btn-gral, .btn-ctc, .btn-nws, .btn-ver {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: rgb(34, 47, 62);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  letter-spacing: 5px;
+}
+.btn-gral:hover, .btn-ctc:hover, .btn-nws:hover, .btn-ver:hover {
+  background-color: rgb(218, 165, 32);
+  color: rgb(34, 47, 62);
+  transition: 0.4s;
+}
+
+.btn-ver {
+  padding: 20px;
+}
+
+.btn-nws {
+  padding: 10px;
+}
+
+.btn-ctc {
+  margin-top: 20px;
+  padding: 10px;
+  height: 36px;
+}
+
+@media (max-width: 375px) {
+  .btn-ctc {
+    width: auto;
+  }
+}/*# sourceMappingURL=estilo.css.map */

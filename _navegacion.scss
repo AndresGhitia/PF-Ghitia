@@ -1,0 +1,77 @@
+//Inicia Nav
+nav{
+    background: $colorGrey;
+        ul{
+            font-size: $fontSmall;
+            margin-right: 30px;
+            li{
+                a:hover{
+                    font-weight:600;
+                }
+            }
+        }
+}
+//Cierra Nav
+
+//Inicia Heroe
+section{
+    p{
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+//Cierra Heroe
+
+//Inica Footer
+footer{
+    background-color: $colorGrey;
+    margin-top: 20px;
+    ul{
+        text-decoration: none;
+        li{
+         padding: 10px 0;
+         font-size: $fontSmall;
+            a{
+                text-decoration: none;
+                color: $colorBlack;
+            }
+        }
+    }
+}
+//Cierra Footer
+
+//Inicia Seccion Nosotros
+.box-ctc{
+    p{
+        text-align: left;
+    }
+}
+//Cierra Seccion Nosotros
+
+//Inicia Seccion Garantia
+.box-gta{
+    p{
+        text-align: left;
+    }
+}
+//Cierra Seccion Garantia
+
+//Inicia Seccion Contacto
+form{
+    font-size: $fontXSmall;
+    width: 45%;
+    align-items: center;
+    margin: auto;
+        input{
+            width: 100%;
+            height: 30px;
+            margin-bottom: 20px;
+    }
+}
+//Cierra Seccion Contacto
+
+//Inicia ERROR 404
+.error{
+    text-align: center;
+    background-color: $colorGrey;
+}
