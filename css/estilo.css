@@ -49,14 +49,87 @@ h4 {
   margin: 20px;
 }
 
+.cto-logo {
+  cursor: pointer;
+}
+
+.cto-cantidad {
+  background-color: rgb(218, 165, 32);
+  color: white;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  padding: 5px;
+  top: 30px;
+  right: 15px;
+  position: absolute;
+  display: none;
+}
+
+.modelos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.ventana-compra {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: lavender;
+  margin: auto;
+  width: 40%;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(34, 47, 62);
+}
+
+.btn-cerrar {
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.carrito-nombre {
+  padding-left: 20px;
+}
+
+.carrito-modelos {
+  display: flex;
+  color: black;
+  border-bottom: 1px solid black;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 1.75rem;
+}
+
+.elimnar-prducto {
+  cursor: pointer;
+}
+
+.carrito-total {
+  background-color: rgb(34, 47, 62);
+  width: 100%;
+  font-size: 1.75rem;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
 .card {
   margin: auto;
-  margin-bottom: 40px;
+  margin: 40px 0;
   width: 250px;
   align-items: center;
   box-sizing: border-box;
   border-radius: 20px;
-  cursor: pointer;
   padding-top: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transition: 0.4s;
@@ -65,6 +138,11 @@ h4 {
 .card:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   transform: translate(0px, -8px);
+}
+
+.card-txt {
+  padding: 0;
+  margin: 0;
 }
 
 .box-ctc {
@@ -119,6 +197,11 @@ h4 {
 
 .img-404 {
   width: 350px;
+}
+
+.img-buy {
+  width: 50px;
+  margin: 10px 0px;
 }
 
 @media (max-width: 425px) {
@@ -197,6 +280,27 @@ form input {
   letter-spacing: 5px;
 }
 .btn-gral:hover, .btn-ctc:hover, .btn-nws:hover, .btn-ver:hover {
+  background-color: rgb(218, 165, 32);
+  color: rgb(34, 47, 62);
+  transition: 0.4s;
+}
+
+.btn-buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: rgb(34, 47, 62);
+  color: rgb(255, 255, 255);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: none;
+  width: 100%;
+  font-size: 1.25rem;
+  letter-spacing: 5px;
+  padding: 10px 0;
+}
+.btn-buy:hover {
   background-color: rgb(218, 165, 32);
   color: rgb(34, 47, 62);
   transition: 0.4s;

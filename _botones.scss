@@ -17,6 +17,27 @@
     }
 }
 
+.btn-buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: $colorBlack;
+    color: $colorWhite;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    width: 100%;
+    font-size: $fontXSmall;
+    letter-spacing: 5px;
+    padding: 10px 0;
+    &:hover{
+        background-color: $colorlGold ;
+        color: $colorBlack;
+        transition: 0.4s;
+    }
+}
+
 .btn-ver{
     @extend.btn-gral;
     padding: 20px;

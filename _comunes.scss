@@ -49,16 +49,91 @@ h4{
 
 }
 
+.cto-logo{
+    cursor: pointer;
+}
+
+.cto-cantidad {
+    background-color: $colorlGold;
+    color: white;
+    border-radius: 5px;
+    font-size: $fontXSmall;
+    padding: 5px;
+    top: 30px;
+    right: 15px;
+    position: absolute;
+    display: none;
+  }  
+
+.modelos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}  
+//modal
+
+.ventana-compra{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: lavender;
+    margin: auto;
+    width: 40%;
+    color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: $colorBlack;
+}
+
+.btn-cerrar{
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.carrito-nombre {
+    padding-left: 20px;
+}
+
+.carrito-modelos {
+    display: flex;
+    color: black;
+    border-bottom: 1px solid black;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: $fontMedium;
+}
+
+.elimnar-prducto{
+    cursor: pointer;
+}
+  
+  
+.carrito-total {
+  background-color: $colorBlack;
+  width: 100%;
+  font-size: $fontMedium;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+  
 //cards
 
 .card{
     margin: auto;
-    margin-bottom: 40px;
+    margin: 40px 0;
     width: 250px;
     align-items: center;
     box-sizing: border-box;
     border-radius: 20px;
-    cursor: pointer;
     padding-top: 10px;
     box-shadow: 
     0 14px 28px rgba(0, 0, 0, 0.25),
@@ -77,6 +152,11 @@ h4{
 @mixin ancho($ancho) {
     margin: auto;
     width: $ancho;
+}
+
+.card-txt{
+    padding: 0;
+    margin: 0;
 }
 
 .box-ctc{
@@ -129,8 +209,13 @@ h4{
     width: 350px;
 }
 
+.img-buy{
+    width: 50px;
+    margin: 10px 0px;
+}
 @media (max-width:425px){
     .img-lgo{
         height: 30px;
     }
 }
+
